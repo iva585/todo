@@ -1,14 +1,24 @@
 import React from 'react';
-import Button from './components/Button/Button';
+import Todo from './components/Todo/Todo';
 import Title from './components/Title/Title';
+import classes from './App.module.css';
 
 function App(): JSX.Element {
   return (
     <div>
-      <Title>this is my title</Title>
-      <Button>
-        <div>Hello!</div>
-      </Button>
+      <Title>To do today</Title>
+      <main className={classes.toDos}>
+        <Todo
+          title={'Schuhe putzen'}
+          description={'Alle Schuhe im Regal vor der Tür'}
+        />
+        <Todo title={'Pflanzen gießen'} description={'Auch die in der Küche'} />
+        <Todo title={'Wäsche'} description={'waschen, bügeln, aufraumen'} />
+        <Todo
+          title={'Rechnungen bezahlen'}
+          description={'Baumschule und Zahnarzt'}
+        />
+      </main>
     </div>
   );
 }
