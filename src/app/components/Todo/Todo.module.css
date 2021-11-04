@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  padding: 1rem;
+  border: 1rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 10px;
+  text-align: center;
+}
+
+.todo--isDone {
+  background: forestgreen;
+}
+
+.todo--notDone {
+  background: orange;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.heading--isDone {
+  color: whitesmoke;
+  text-decoration: line-through;
+}
+
+.heading--notDone {
+  color: whitesmoke;
+}
+
+.paragraph--isDone {
+  color: white;
+  text-decoration: line-through;
+}
+
+.paragraph--notDone {
+  color: white;
+}
