@@ -1,0 +1,16 @@
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  color: green;
+}
+
+.input {
+  color: green;
+}
+
+.buttonAdd {
+  color: orange;
+}
